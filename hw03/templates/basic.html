@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> {{ temp }} </title>     
+  </head>
+
+  <body>
+    <center>
+      <h1> {{ heading }} </h1>
+      <table border="1">
+	{%- for item in inputdata %}
+	<tr>
+	  <td> {{ item }} </td>
+	  <td> {{ inputdata[item] }} </td>
+	</tr>
+	{%- endfor %}
+      </table>
+
+      <h2> wotd: {{ chosen }} </h2>
+    </center>
+  </body>
+
+</html>

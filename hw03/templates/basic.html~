@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> {{ temp }} </title>     
+  </head>
+
+  <body>
+    <center>
+      <h1> {{ heading }} </h1>
+      {{occList}}
+      <table id="#01">
+	<tr>
+	  {{ occList }}
+{#	  {%- for item in occList %}
+	  <td> {{ item }} </td>
+	  {%- endfor %}#}
+	</tr>
+      </table>
+
+    </center>
+  </body>
+
+</html>
