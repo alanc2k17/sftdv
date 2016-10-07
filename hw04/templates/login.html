@@ -6,14 +6,25 @@
   </head>
 
   <body>
-    <form action="/auth" method="POST">
-      user: 
-      <input type="text" name="username">
-      pass: 
-      <input type="text" name="password">
-      <br>
-      <input type="submit" name="sub1">
-    </form>
+    <center>
+      <h1> How to use: </h1>
+      1) If you do not have an account, click 'Register'. <br>
+      2) If you have an existing account, type in your username and
+      password in their respective boxes and click 'Login'. <br>
+      3) If you forgot your username and/or password, sucks to suck. <br><br>
+      <form action="/auth" method="POST">
+	user: 
+	<input type="text" name="username">
+	pass: 
+	<input type="password" name="password">
+	<br>
+	<input type="submit" value="Login" name="sub1">
+      </form>
+
+      <form action="/register" method="POST">
+	<input type="submit" value="Register" name="sub1">
+      </form>
+    </center>
     <br>
   </body>
 
